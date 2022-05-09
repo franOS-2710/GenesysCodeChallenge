@@ -1,0 +1,37 @@
+{
+  "testdata":
+  [
+    {"testname":"BookAFlightTest",
+      "iteration" : [
+        {
+          "departureCountry":"Portugal",
+          "departureAirport":"Lisbon",
+          "destinationCountry":"Spain",
+          "destinationAirport":"Barcelona",
+          "departureDate":"20-05-2022",
+          "returnDate":"15-06-2022",
+          "passengerTitle1":"Mrs",
+          "NameP1":"Franciele",
+          "SurnameP1":"Silva",
+          "passengerTitle2":"Mr",
+          "NameP2":"Andre",
+          "SurnameP2":"Silva"
+        },
+        {
+          "departureCountry":"Ireland",
+          "departureAirport":"Dublin",
+          "destinationCountry":"United Kingdom",
+          "destinationAirport":"London",
+          "departureDate":"01-06-2022",
+          "returnDate":"20-06-2022",
+          "passengerTitle1":"Mrs",
+          "NameP1":"Franciele",
+          "SurnameP1":"Silva",
+          "passengerTitle2":"Mr",
+          "NameP2":"Andre",
+          "SurnameP2":"Silva"
+        }
+      ]
+    }
+  ]
+}
