@@ -50,6 +50,7 @@ public class DriverFactory {
             remoteWebDriver = new RemoteWebDriver(url,capabilities);
             remoteWebDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Long.parseLong(TestConfig.getProperty("pageLoadTimeOut"))));
             remoteWebDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Long.parseLong(TestConfig.getProperty("implicitWait"))));
+            remoteWebDriver.manage().window().maximize();
         }catch (Exception e){
             e.printStackTrace();
         }
@@ -70,6 +71,7 @@ public class DriverFactory {
             remoteWebDriver = new RemoteWebDriver(url,capabilities);
             remoteWebDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Long.parseLong(TestConfig.getProperty("pageLoadTimeOut"))));
             remoteWebDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Long.parseLong(TestConfig.getProperty("implicitWait"))));
+            remoteWebDriver.manage().window().maximize();
         }catch (Exception e){
             e.printStackTrace();
         }
