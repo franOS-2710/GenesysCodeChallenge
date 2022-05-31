@@ -26,7 +26,7 @@ public class FlightsPage extends BasePage{
     @FindBy(xpath = "//span[contains(text(),'Log in later')]")
     private WebElement linkLoginLater;
 
-    @FindBy(xpath = "//span[contains(text(),'Passenger 1')]/ancestor::div[@class='passenger']//div[@class='dropdown b2']")
+    @FindBy(xpath = "//span[contains(text(),'Passenger 1')]/ancestor::div[@class='passenger']//div[@class='dropdown b2']/button")
     private WebElement btnTitlePassenger1;
 
     @FindBy(xpath = "//div[@class='dropdown-item__label b2']")
@@ -122,8 +122,8 @@ public class FlightsPage extends BasePage{
 
     public void FillinDropdown(WebElement dropdownClick, String title) throws Exception{
         dropdownClick.click();
-        waitForElement(driver.findElement(By.xpath("//div[text()='"+title+"']")), 20);
-        driver.findElement(By.xpath("//div[text()='"+title+"']")).click();
+        waitForElement(driver.findElement(By.xpath("//div[contains(text(),'"+title+"')]")), 20);
+        driver.findElement(By.xpath("//div[contains(text(),'"+title+"')]")).click();
     }
 
     public void SetInfoPassenger1(String title, String Name, String Surname) throws Exception{
