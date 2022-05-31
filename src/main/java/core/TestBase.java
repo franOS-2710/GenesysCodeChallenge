@@ -27,7 +27,6 @@ public class TestBase {
         }else if(System.getenv("runtype").equals("docker")){
             driver = driverFactory.getRemoteWebDriverDocker(System.getenv("hub"));
         }
-        //driver.navigate().to(TestConfig.getProperty("appBaseURL"));
     }
 
     @AfterClass(alwaysRun=true)
